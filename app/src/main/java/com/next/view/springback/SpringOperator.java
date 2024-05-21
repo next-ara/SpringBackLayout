@@ -8,13 +8,14 @@ package com.next.view.springback;
  * @auditor
  */
 public class SpringOperator {
+
     private final double damping;
     private final double tension;
 
     public SpringOperator(float f, float f2) {
         double d = (double) f2;
-        this.tension = Math.pow(6.283185307179586d / d, 2.0d);
-        this.damping = (((double) f) * 12.566370614359172d) / d;
+        this.tension = Math.pow(Math.PI * 2 / d, 2.0d);
+        this.damping = (((double) f) * Math.PI * 4) / d;
     }
 
     public double updateVelocity(double d, float f, double d2, double d3) {
