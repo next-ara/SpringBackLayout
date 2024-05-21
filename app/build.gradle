@@ -26,7 +26,6 @@ android {
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.next.view.springback"
         minSdk 24
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
